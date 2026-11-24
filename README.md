@@ -68,7 +68,10 @@ print("Predicted Class:", lg.predict(new_sample_scaled)[0])
 print("Class Probabilities:", lg.predict_proba(new_sample_scaled)[0])
 
 📁 Repository Structure
+
 ├── iris.Logistic Regression.ipynb                 # Main Jupyter Notebook with full code & outputs
+
 ├── iris.csv                   # Dataset file
+
 ├── README.md                  # Project documentation & execution guide
 
