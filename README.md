@@ -30,9 +30,13 @@ oTransformed raw single-sample inputs through the fitted scaling pipeline prior 
 ## 📊 Model Results
 The model achieved an overall accuracy of ~93.3% on the independent test dataset:
 Class Metric	Precision	Recall	F1-Score	Support
+
 0 (Setosa)	1.00	1.00	1.00	10
+
 1 (Versicolor)	0.90	0.90	0.90	10
+
 2 (Virginica)	0.90	0.90	0.90	10
+
 Overall Accuracy	—	—	0.93	30
 
 ## 🚀 How to Run the Project
