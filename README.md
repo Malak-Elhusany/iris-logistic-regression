@@ -3,19 +3,27 @@ A end-to-end Machine Learning pipeline for classifying Iris flower species using
 
 ## 📌 Project Overview
 The goal of this project is to accurately predict the species of an Iris flower (Setosa, Versicolor, or Virginica) based on four physical features:
+
 Sepal Length (cm)
+
 Sepal Width (cm)
+
 Petal Length (cm)
+
 Petal Width (cm)
+
 Instead of treating species classification as a continuous regression problem, this pipeline implements Logistic Regression, a proper probabilistic classification algorithm well-suited for discrete categorical outcomes.
 
 ## 🛠️ Key Machine Learning Concepts Applied
 1.Stratified Train-Test Split:
 oUsed stratify=y during train_test_split to maintain identical target class distributions across both training ($80\%$) and testing ($20\%$) sets.
+
 2.Prevention of Data Leakage (Scaler Fitting):
 oImplemented StandardScaler strictly by applying .fit_transform() on X_train and only .transform() on X_test and new samples. This ensures evaluation metrics reflect model generalization to completely unseen distributions.
+
 3.Multi-class Model Evaluation:
 oEvaluated model predictions using accuracy_score alongside full classification_report metrics (Precision, Recall, and F1-Score) and a Confusion Matrix to measure per-class performance balance.
+
 4.Single-sample Inference (predict_proba):
 oTransformed raw single-sample inputs through the fitted scaling pipeline prior to outputting predicted class labels and prediction confidence probabilities.
 
@@ -31,7 +39,8 @@ Overall Accuracy	—	—	0.93	30
 1. Prerequisites
 Ensure you have Python 3.8+ installed along with the required libraries:
 pip install numpy pandas scikit-learn
-2. Execution Workflow
+
+3. Execution Workflow
 Run the code cells sequentially inside your Jupyter Notebook / Google Colab or executing as a Python script:
 import numpy as np
 import pandas as pd
