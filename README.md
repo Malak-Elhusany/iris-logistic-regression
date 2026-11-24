@@ -66,8 +66,9 @@ new_sample_scaled = scaler.transform(new_sample)
 
 print("Predicted Class:", lg.predict(new_sample_scaled)[0])
 print("Class Probabilities:", lg.predict_proba(new_sample_scaled)[0])
+
 📁 Repository Structure
-├── iris.ipynb                 # Main Jupyter Notebook with full code & outputs
+├── iris.Logistic Regression.ipynb                 # Main Jupyter Notebook with full code & outputs
 ├── iris.csv                   # Dataset file
 ├── README.md                  # Project documentation & execution guide
 
